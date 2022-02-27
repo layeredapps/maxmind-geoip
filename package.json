@@ -9,7 +9,7 @@
     "maxmind": "^4.3.1"
   },
   "peerDependencies": {
-    "@layeredapps/dashboard": "1.x - latest"
+    "@layeredapps/dashboard": "github:layeredapps/dashboard"
   },
   "description": "MaxMind GeoIP module for Dashboard",
   "engine": {
