@@ -1,0 +1,30 @@
+{
+  "dashboard": {
+    "title": "MaxMind GeoIP module",
+    "server": [
+      "/src/server/maxmind-geoip/bind-country.js"
+    ]
+  },
+  "dependencies": {
+    "maxmind": "^4.3.1"
+  },
+  "peerDependencies": {
+    "@layeredapps/dashboard": "1.x - latest"
+  },
+  "description": "MaxMind GeoIP module for Dashboard",
+  "engine": {
+    "node": ">=14",
+    "npm": ">=6"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@layeredapps/maxmind-geoip",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/layeredapps/maxmind-geoip.git"
+  },
+  "scripts": {
+    "test": "act -j test-fs-storage"
+  },
+  "version": "1.0.0"
+}
