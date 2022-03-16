@@ -13,8 +13,8 @@
   },
   "description": "MaxMind GeoIP module for Dashboard",
   "engine": {
-    "node": ">=14",
-    "npm": ">=6"
+    "node": ">=16",
+    "npm": ">=8"
   },
   "license": "MIT",
   "main": "index.js",
