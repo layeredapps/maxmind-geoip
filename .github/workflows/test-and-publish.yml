@@ -27,6 +27,9 @@ jobs:
       run: |
         export RESPONSE_PATH="`pwd`/documentation"
         export SCREENSHOT_PATH="`pwd`/documentation/screenshots"
+        npm install -g mocha
+        npm install --production=false
+        npm i -D
         npm run test | tee tests.txt
         TESTS=`cat $HERE/tests.txt`
         if [[ "$TESTS" == *" 1)"* ]]; then
