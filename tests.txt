@@ -1,8 +1,4 @@
 
-> @layeredapps/maxmind-geoip@1.0.0 test-sqlite
-> npm install sqlite3 --no-save --no-audit --no-fund >/dev/null && NODE_ENV=testing STORAGE=sqlite SQLITE_DATABASE=dashboard SQLITE_FILE=`pwd`/db.sqlite mocha --bail './{,!(node_modules)/**}/*.test.js' --timeout 90000 --recursive
-
-
 
   server/bind-country
     before
@@ -19,5 +15,5 @@
       ✔ object
 
 
-  5 passing (375ms)
+  5 passing (353ms)
 
