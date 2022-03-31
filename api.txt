@@ -1,0 +1,11 @@
+@layeredapps/dashboard 0.0.0
+http://localhost:8009
+
+|------------------------------------------------------------------|
+| /api/user/geoip/country                                          |
+| RECEIVES-----------------| RETURNS--| EXCEPTIONS-----------------|
+| required querystring ip  | object   | invalid-ip                 |
+| required querystring ip  |          |  * invalid-ip              |
+|                          |          |  * missing querystring ip  |
+|                          |          |  * invalid querystring ip  |
+|--------------------------|----------|----------------------------|
