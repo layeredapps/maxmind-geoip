@@ -25,11 +25,9 @@ jobs:
         npm version patch
     - name: Generate UI screenshots and API responses
       run: |
-        HERE=`pwd`
-        cd /tmp/project
         export RESPONSE_PATH="`pwd`/documentation"
         export SCREENSHOT_PATH="`pwd`/documentation/screenshots"
-        npm run test-sqlite | tee tests.txt
+        npm run test | tee tests.txt
         TESTS=`cat $HERE/tests.txt`
         if [[ "$TESTS" == *" 1)"* ]]; then
           exit 1
@@ -40,10 +38,8 @@ jobs:
         GENERATE_SCREENSHOTS: true
         SCREENSHOT_LANGUAGES: en
         NODE_OPTIONS: --preserve-symlinks
-    - name: Generate sitemap.txt and api.txt
-      run: |
-        npm install @layeredapps/dashboard --no-save
-        node main.js
+    - name: Generate supporting text files
+      run: node main.js
       env:
         NODE_ENV: testing
         EXIT_ON_START: true
