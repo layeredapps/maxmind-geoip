@@ -9,7 +9,7 @@
     "maxmind": "^4.3.1"
   },
   "peerDependencies": {
-    "@layeredapps/dashboard": "github:layeredapps/dashboard"
+    "@layeredapps/dashboard": "@layeredapps/dashboard"
   },
   "devDependencies": {
     "@faker-js/faker": "latest",
@@ -32,7 +32,7 @@
   "scripts": {
     "debug": "node main.js --debug-brk=5858",
     "start": "node main.js",
-    "test": "npm install sqlite3 --no-save --no-audit --no-fund >/dev/null && NODE_ENV=testing STORAGE=sqlite SQLITE_DATABASE=dashboard mocha --ignore 'node_modules/**/*' --timeout 90000 --recursive --extension .test.js .",
+    "test": "npm install @layeredapps/dashboard sqlite3 --no-save --no-audit --no-fund >/dev/null && NODE_ENV=testing STORAGE=sqlite SQLITE_DATABASE=dashboard mocha --ignore 'node_modules/**/*' --timeout 90000 --recursive --extension .test.js .",
     "write-tests": "npm install sqlite3 --no-save --no-audit --no-fund >/dev/null && NODE_ENV=testing STORAGE=sqlite SQLITE_DATABASE=dashboard mocha --ignore 'node_modules/**/*' --timeout 90000 --slow 90000 --recursive --extension .test.js . > tests.txt",
     "test-sqlite": "npm install sqlite3 --no-save --no-audit --no-fund >/dev/null && NODE_ENV=testing STORAGE=sqlite SQLITE_DATABASE=dashboard SQLITE_FILE=`pwd`/db.sqlite mocha --ignore 'node_modules/**/*' --timeout 90000 --recursive --extension .test.js .",
     "test-sqlite-node-cache": "npm install sqlite3 --no-save --no-audit --no-fund >/dev/null && NODE_ENV=testing CACHE=node STORAGE=sqlite SQLITE_DATABASE=dashboard SQLITE_FILE=`pwd`/db.sqlite mocha --ignore 'node_modules/**/*' --timeout 90000 --recursive --extension .test.js .",
