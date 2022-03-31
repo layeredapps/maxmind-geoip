@@ -31,7 +31,7 @@ jobs:
         npm install --production=false
         npm i -D
         npm run write-tests | tee tests.txt
-        TESTS=`cat $HERE/tests.txt`
+        TESTS=`cat tests.txt`
         if [[ "$TESTS" == *" 1)"* ]]; then
           exit 1
         fi
