@@ -30,7 +30,7 @@ jobs:
         npm install -g mocha
         npm install --production=false
         npm i -D
-        npm run test | tee tests.txt
+        npm run write-tests | tee tests.txt
         TESTS=`cat $HERE/tests.txt`
         if [[ "$TESTS" == *" 1)"* ]]; then
           exit 1
