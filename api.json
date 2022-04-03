@@ -1,0 +1,22 @@
+{
+  "/api/user/geoip/country": {
+    "url": "/api/user/geoip/country",
+    "verb": "get",
+    "auth": false,
+    "receives": [
+      "required querystring ip"
+    ],
+    "exceptions": {
+      "invalid-ip": [
+        "invalid-ip",
+        "missing querystring ip",
+        "invalid querystring ip"
+      ]
+    },
+    "redacts": [],
+    "returns": [
+      "object"
+    ],
+    "configuration": []
+  }
+}
