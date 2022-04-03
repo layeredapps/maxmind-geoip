@@ -12,6 +12,7 @@
     "@layeredapps/dashboard": "latest"
   },
   "devDependencies": {
+    "@layeredapps/dashboard": "latest",
     "@faker-js/faker": "latest",
     "mocha": "latest",
     "puppeteer": "latest",
