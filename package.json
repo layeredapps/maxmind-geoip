@@ -9,7 +9,7 @@
     "maxmind": "^4.3.1"
   },
   "peerDependencies": {
-    "@layeredapps/dashboard": "@layeredapps/dashboard"
+    "@layeredapps/dashboard": "latest"
   },
   "devDependencies": {
     "@layeredapps/dashboard": "latest",
