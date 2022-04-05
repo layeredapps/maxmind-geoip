@@ -3,7 +3,6 @@
 #### Index
 
 - [Introduction](#maxmind-geoip-module)
-- [Module contents](#module-contents)
 - [Import this module](#import-this-module)
 - [Access the API](#access-the-api)
 - [Github repository](https://github.com/layeredapps/maxmind-geoip)
@@ -14,20 +13,6 @@
 Dashboard bundles everything a web app needs, all the "boilerplate" like signing in and changing passwords, into a parallel server so you can write a much smaller web app.
 
 [MaxMind](https://www.maxmind.com/en/home) provide a database that converts IP addresses to countries and this module adds API routes for identifying the country by IP and a server handler that will automatically attach a Country object to each HttpRequest using their database.  There is much more data in the MaxMind database than is exposed via the API, pull requests are welcome to add more routes to access it. 
-
-# Module contents 
-
-Dashboard modules can add pages and API routes.  For more details check the `sitemap.txt` and `api.txt` or `env.txt` also contained in the online documentation.
-
-| Content type             |     |
-|--------------------------|-----|
-| Proxy scripts            |     |
-| Server scripts           | Yes |
-| Content scripts          |     |
-| User pages               |     |
-| User API routes          | Yes | 
-| Administrator pages      |     |
-| Administrator API routes |     | 
 
 ## Import this module
 
