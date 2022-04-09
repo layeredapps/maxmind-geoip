@@ -2,7 +2,7 @@
 
 #### Index
 
-- [Introduction](#maxmind-geoip-module)
+- [Introduction](#introduction)
 - [Import this module](#import-this-module)
 - [Access the API](#access-the-api)
 - [Github repository](https://github.com/layeredapps/maxmind-geoip)
