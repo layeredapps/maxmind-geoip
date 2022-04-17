@@ -8,7 +8,6 @@
     ],
     "exceptions": {
       "invalid-ip": [
-        "invalid-ip",
         "missing querystring ip",
         "invalid querystring ip"
       ]
