@@ -1,5 +1,11 @@
 # Documentation for Maxmind GeoIP module
 
+#### Shortcuts
+
+- [Documentation website](https://layeredapps.github.io)
+- [Module documentation](https://layeredapps.github.io/maxmind-geoip-module)
+- [API documentation](https://layeredapps.github.io/maxmind-geoip-api)
+
 #### Index
 
 - [Introduction](#introduction)
