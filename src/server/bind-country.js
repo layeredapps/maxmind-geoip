@@ -1,17 +1,19 @@
 module.exports = {
-  before: async (req) => {
-    if (req.country) {
-      return
-    }
-    const queryWas = req.query
-    req.query = {
-      ip: req.ip || requestIPAddress(req)
-    }
-    if (req.query.ip) {
-      req.country = await global.api.user.geoip.Country.get(req)
-    }
-    req.query = queryWas
+  before: bindCountry
+}
+
+async function bindCountry (req) {
+  if (req.country) {
+    return
   }
+  const queryWas = req.query
+  req.query = {
+    ip: req.ip || requestIPAddress(req)
+  }
+  if (req.query.ip) {
+    req.country = await global.api.user.geoip.Country.get(req)
+  }
+  req.query = queryWas
 }
 
 function requestIPAddress (req) {
