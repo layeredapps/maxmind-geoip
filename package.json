@@ -1,9 +1,7 @@
 {
   "dashboard": {
     "title": "MaxMind GeoIP module",
-    "server": [
-      "/src/server/maxmind-geoip/bind-country.js"
-    ]
+    "server": []
   },
   "dependencies": {
     "maxmind": "^4.3.1"
