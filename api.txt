@@ -1,4 +1,4 @@
-@layeredapps/dashboard 0.0.45
+@layeredapps/dashboard 0.0.57
 http://localhost:8000
 
 |------------------------------------------------------------------|
@@ -8,3 +8,6 @@ http://localhost:8000
 | required querystring ip  |          |  * missing querystring ip  |
 |                          |          |  * invalid querystring ip  |
 |--------------------------|----------|----------------------------|
+
+
+2022-04-23T23:22:02.736Z

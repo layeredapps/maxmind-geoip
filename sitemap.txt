@@ -1,4 +1,4 @@
-@layeredapps/dashboard 0.0.45
+@layeredapps/dashboard 0.0.57
 http://localhost:8000
 
 Administrator menu:
@@ -11,9 +11,6 @@ Special HTML files:
 @layeredapps/dashboard/template.html
 @layeredapps/dashboard/error.html
 @layeredapps/dashboard/redirect.html
-
-Server handlers:
-/src/server/maxmind-geoip/bind-country.js
 
 URL ------------------------------------------- AUTH - TEMPLATE - HTTP REQUESTS - NODEJS ------------------- HTML ---------------------
 /                                               GUEST  FULLSCREEN                 static-page                /src/www                  
@@ -116,3 +113,5 @@ URL ------------------------------------------- AUTH - TEMPLATE - HTTP REQUESTS 
 /api/user/set-session-verified                                    PATCH           @layeredapps/dashboard                               
 /api/user/update-profile                                          PATCH           @layeredapps/dashboard                               
 /home                                                                             static-page                /src/www                  
+
+2022-04-23T23:22:02.735Z
