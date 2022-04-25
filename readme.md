@@ -10,6 +10,7 @@
 
 - [Introduction](#introduction)
 - [Import this module](#import-this-module)
+- [Provided server, content and proxy handlers](#provided-server-content-and-proxy-handlers)
 - [Access the API](#access-the-api)
 - [Github repository](https://github.com/layeredapps/maxmind-geoip)
 - [NPM package](https://npmjs.org/layeredapps/maxmind-geoip)
@@ -33,6 +34,14 @@ Edit your `package.json` to activate the module:
         "@layeredapps/maxmind-geoip"
       ]
     }
+
+# Provided server, content and proxy handlers
+
+This module comes with some convenience scripts you can add to your `package.json`:
+
+| Type     | Script path                                            | Description                                              |
+|----------|--------------------------------------------------------|----------------------------------------------------------|
+| server   | @layeredapps/maxmind-geoip/src/server/bind-country.js | The MaxMind Country object will be bound to `req.country` |
 
 ## Access the API
 
