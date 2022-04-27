@@ -1,8 +1,4 @@
 
-> @layeredapps/maxmind-geoip@1.0.19 test
-> NODE_ENV=testing STORAGE=sqlite SQLITE_DATABASE=dashboard mocha --ignore 'node_modules/**/*' --timeout 90000 --slow 90000 --recursive --extension .test.js .
-
-
 
   server/bind-country
     before
@@ -19,5 +15,5 @@
       ✔ object
 
 
-  5 passing (825ms)
+  5 passing (918ms)
 
