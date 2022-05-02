@@ -11,7 +11,10 @@ async function bindCountry (req) {
     ip: req.ip || requestIPAddress(req)
   }
   if (req.query.ip) {
-    req.country = await global.api.user.geoip.Country.get(req)
+    try {
+      req.country = await global.api.user.geoip.Country.get(req)
+    } catch (error) {
+    }
   }
   req.query = queryWas
 }
