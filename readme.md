@@ -39,9 +39,10 @@ Edit your `package.json` to activate the module:
 
 This module comes with some convenience scripts you can add to your `package.json`:
 
-| Type     | Script path                                            | Description                                              |
-|----------|--------------------------------------------------------|----------------------------------------------------------|
-| server   | @layeredapps/maxmind-geoip/src/server/bind-country.js | The MaxMind Country object will be bound to `req.country` |
+| Type     | Script path                                            | Description                                               |
+|----------|--------------------------------------------------------|-----------------------------------------------------------|
+| proxy    | @layeredapps/maxmind-geoip/src/proxy/x-country.js      | Include the Maxmind Country object in `x-country` header  |
+| server   | @layeredapps/maxmind-geoip/src/server/bind-country.js  | The MaxMind Country object will be bound to `req.country` |
 
 ## Access the API
 
